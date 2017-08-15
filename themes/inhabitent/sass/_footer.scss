@@ -1,0 +1,15 @@
+.site-footer {
+    background: 
+    url(../../images/dark-wood.png); 
+	background-size: cover,cover;
+    display: flex;
+    .footer-logo {
+        flex-basis: 50%;
+    }
+    .business-hours {
+        flex-basis: 25%;
+    }
+    .contact-info {
+        flex-basis: 25%;
+    }
+}

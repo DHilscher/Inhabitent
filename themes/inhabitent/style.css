@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: David Hilscher
+Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: A hipster store for camping goods.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -591,6 +591,21 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.site-footer {
+  background: url(../../images/dark-wood.png);
+  background-size: cover,cover;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-footer .footer-logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .site-footer .business-hours {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  .site-footer .contact-info {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
 
 /*--------------------------------------------------------------
 # Media
