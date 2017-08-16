@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Merriweather-LightIt';
+  src: url('Merriweather-LightIt.eot');
+  src: url('Merriweather-LightIt.woff2') format('woff2'),
+       url('Merriweather-LightIt.woff') format('woff'),
+       url('Merriweather-LightIt.ttf') format('truetype'),
+       url('Merriweather-LightIt.svg#Merriweather-LightIt') format('svg'),
+       url('Merriweather-LightIt.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

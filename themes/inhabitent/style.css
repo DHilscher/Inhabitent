@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
@@ -286,7 +287,10 @@ big {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  font-family: ‘Merriweather’, Georgia, serif; }
 
 *,
 *:before,
@@ -594,18 +598,43 @@ a {
 
 .site-footer {
   background: url(../../images/dark-wood.png);
-  background-size: cover,cover;
-  display: -ms-flexbox;
-  display: flex; }
-  .site-footer .footer-logo {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
-  .site-footer .business-hours {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%; }
-  .site-footer .contact-info {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%; }
+  color: #fff; }
+  .site-footer .footer-container {
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .footer-container .footer-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+    .site-footer .footer-container .business-hours {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      padding-left: 2%; }
+    .site-footer .footer-container .contact-info {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      padding-left: 11%; }
+      .site-footer .footer-container .contact-info i {
+        margin-right: 8px;
+        font-size: 20px; }
+    .site-footer .footer-container .orange-text {
+      color: #d99054;
+      text-transform: uppercase;
+      font-size: 19.2px;
+      font-family: Novecento Sans Web,sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .site-footer .footer-container .day-of-week {
+      font-weight: 700; }
+    .site-footer .footer-container a {
+      color: #fff;
+      text-decoration: none; }
+    .site-footer .footer-container a:hover {
+      text-decoration: underline; }
+  .site-footer .copyright {
+    font-family: Novecento Sans Web,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 28px 0; }
 
 /*--------------------------------------------------------------
 # Media
