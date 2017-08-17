@@ -666,13 +666,18 @@ a {
     .site-footer .footer-container .footer-logo {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
-      text-align: right; }
+      text-align: right;
+      margin: 48px 0; }
+      .site-footer .footer-container .footer-logo img {
+        width: 50%; }
     .site-footer .footer-container .business-hours {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+          flex-basis: 25%;
+      margin: 48px 0; }
     .site-footer .footer-container .contact-info {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+          flex-basis: 25%;
+      margin: 48px 0; }
       .site-footer .footer-container .contact-info i {
         margin-right: 8px;
         font-size: 20px; }
