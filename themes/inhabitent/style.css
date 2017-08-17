@@ -665,15 +665,14 @@ a {
     margin-right: auto; }
     .site-footer .footer-container .footer-logo {
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+          flex-basis: 50%;
+      text-align: right; }
     .site-footer .footer-container .business-hours {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
-      padding-left: 2%; }
+          flex-basis: 25%; }
     .site-footer .footer-container .contact-info {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
-      padding-left: 11%; }
+          flex-basis: 25%; }
       .site-footer .footer-container .contact-info i {
         margin-right: 8px;
         font-size: 20px; }

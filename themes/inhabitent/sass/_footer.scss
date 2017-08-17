@@ -9,14 +9,13 @@
         margin-right: auto;
         .footer-logo {
             flex-basis: 50%;
+            text-align: right;
         }
         .business-hours {
             flex-basis: 25%;
-            padding-left: 2%;
         }
         .contact-info {
             flex-basis: 25%;
-            padding-left: 11%;
             i {
                 margin-right: 8px;
                 font-size: 20px;

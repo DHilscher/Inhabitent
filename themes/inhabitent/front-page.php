@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+$terms = get_terms ('product-type');
+
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    echo '<ul>';
+    foreach ( $terms as $term ) {
+        echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff</a><p>' . $term->description . '</p></li>';
+    }
+    echo '</ul>';
+}
+?>
 <div class="most-recent-journals"
     <?php
     $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
