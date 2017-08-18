@@ -346,9 +346,7 @@ big {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem;
-  width: 100vw;
-  height: 100vh; }
+  font-size: 1rem; }
 
 *,
 *:before,
@@ -400,6 +398,24 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+.content-area {
+  width: 100%; }
+
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -620,6 +636,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+body:not(.page-template-about) #primary {
+  width: 75%; }
+
 .sticky {
   display: block; }
 
@@ -654,6 +673,54 @@ a {
 .bypostauthor {
   display: block; }
 
+#secondary {
+  width: 25%; }
+
+body.archive .archive-product {
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-main {
+  margin: 0 auto; }
+
+.home-hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+  .home-hero img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.site-header {
+  position: fixed;
+  z-index: 10;
+  width: 100%; }
+
+.site-description {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.front-page-terms {
+  display: -ms-flexbox;
+  display: flex; }
+  .front-page-terms .front-page-term {
+    width: 20%;
+    height: 20%; }
+
+.most-recent-journals {
+  display: -ms-flexbox;
+  display: flex; }
+
 .site-footer {
   background: url(../../images/dark-wood.png);
   color: #fff; }
@@ -667,7 +734,7 @@ a {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       text-align: right;
-      margin: 48px 0; }
+      margin: 72px 0px 48px; }
       .site-footer .footer-container .footer-logo img {
         width: 50%; }
     .site-footer .footer-container .business-hours {

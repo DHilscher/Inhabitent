@@ -4,6 +4,13 @@
 
 /* Posts and pages */
 
+body{
+	&:not(.page-template-about){
+		#primary {
+			width: 75%;
+		}
+	}
+}
 .sticky {
 	display: block;
 }
@@ -46,4 +53,64 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+#secondary {
+	width: 25%;
+}
+
+body.archive {
+	.archive-product {
+		flex-flow: column nowrap;
+		display: flex;
+	}
+}
+
+.site-main {
+	margin: 0 auto;
+}
+
+.home-hero {
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
+}
+
+.site-header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.site-description {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.front-page-terms {
+	display: flex;
+	.front-page-term {
+		width: 20%;
+		height: 20%;
+	}
+}
+
+.most-recent-journals {
+	display: flex;	
+}
+
+.journal-recent-block-item {
+	
 }

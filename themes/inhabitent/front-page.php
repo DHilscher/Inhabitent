@@ -1,16 +1,27 @@
-<?php get_header(); 
+<?php
+/**
+ * The template for displaying all pages.
+ *
+ * @package RED_Starter_Theme
+ */ ?>
 
+<?php get_header(); ?>
+<section class="home-hero">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-full.svg" alt="Inhabitent Logo">
+</section>
+
+
+<?php
 $terms = get_terms ('product-type');
-
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-    echo '<ul>';
+    echo '<ul class="front-page-terms">';
     foreach ( $terms as $term ) {
-        echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff</a><p>' . $term->description . '</p></li>';
+        echo '<li class="front-page-term"><a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff</a><p>' . $term->description . '</p></li>';
     }
     echo '</ul>';
 }
 ?>
-<div class="most-recent-journals"
+<div class="most-recent-journals">
     <?php
     $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
     $journal_posts = get_posts( $args ); // returns an array of posts
@@ -25,9 +36,8 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
         <div class="entry-meta">
             <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
         </div>
-    <a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
+        <a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
     </div>
     <?php endforeach; wp_reset_postdata(); ?>
 </div>
-
 <?php get_footer(); ?>

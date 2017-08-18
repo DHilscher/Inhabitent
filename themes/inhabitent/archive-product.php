@@ -51,5 +51,4 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
