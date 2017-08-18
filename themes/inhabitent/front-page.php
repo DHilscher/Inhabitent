@@ -13,14 +13,22 @@
 
 <?php
 $terms = get_terms ('product-type');
-if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-    echo '<ul class="front-page-terms">';
-    foreach ( $terms as $term ) {
-        echo '<li class="front-page-term"><a href="' . get_term_link( $term ) . '">' . $term->name . ' Stuff</a><p>' . $term->description . '</p></li>';
-    }
-    echo '</ul>';
-}
-?>
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
+
+    <ul class="front-page-terms">
+
+        <?php foreach ( $terms as $term ) : ?>
+            <li class="front-page-term">
+                <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
+                <p class="front-page-term-description"><?php echo $term->description; ?></p>
+                <a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a>
+            </li>
+        <?php endforeach; ?>
+
+    </ul>
+
+<?php endif; ?>
+
 <div class="most-recent-journals">
     <?php
     $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
@@ -34,7 +42,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
             <?php endif; ?>
         </div>
         <div class="entry-meta">
-            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
         </div>
         <a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
     </div>
@@ -42,4 +50,4 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 </div>
 <?php get_footer(); ?>
 
-<!--<img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>-->
+<img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>

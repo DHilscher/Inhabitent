@@ -403,35 +403,15 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-.content-area {
-  width: 100%; }
-
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .content-area {
   width: 74%;
   padding-right: 25px; }
-
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
   width: 1120px;
   display: -ms-flexbox;
   display: flex;
   margin: auto; }
-
-.page-id-183 .site-content {
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
-
-.page-id-183 #site-navigation a {
-  color: white; }
-
-.page-id-2 #site-navigation a {
-  color: white; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -743,7 +723,15 @@ body.archive .archive-product {
 
 .most-recent-journals {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0 auto; }
+  .most-recent-journals div {
+    -ms-flex: 0 1 32%;
+        flex: 0 1 32%; }
+  .most-recent-journals :first-child img {
+    height: 247px; }
+  .most-recent-journals a {
+    color: #248a83; }
 
 .home-logo {
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
@@ -762,6 +750,34 @@ body.archive .archive-product {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.content-area {
+  width: 100%; }
+
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.page-id-183 .site-content {
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+
+.page-id-183 #site-navigation a {
+  color: white; }
+
+.page-id-2 #site-navigation a {
+  color: white; }
+
+.page-id-183 .home-logo {
+  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: contain; }
+
+.page-id-2 .home-logo {
+  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: contain; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

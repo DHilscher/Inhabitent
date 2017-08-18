@@ -87,3 +87,16 @@ function inhabitent_archive_title( $title ) {
 }
  
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+function inhabitent_excerpt_length( $length ) {
+	return 49;
+}
+add_filter( 'excerpt_length', 'inhabitent_excerpt_length', 999 );
+
+function inhabitent_excerpt_more( $more ) {
+    return sprintf( ' [...]<br><br><a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read More', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'inhabitent_excerpt_more' );
