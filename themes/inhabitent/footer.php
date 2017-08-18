@@ -31,7 +31,7 @@
 					</div>
 
 					<div class="footer-logo">
-					<a href="#" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg"></a>
+					<a href='<?php echo get_home_url(); ?>' rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg"></a>
 					</div>
 				</div>
 				<div class="copyright">Copyright © 2017 Inhabitent</div>

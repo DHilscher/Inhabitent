@@ -72,3 +72,18 @@ function new_excerpt_more($more) {
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+// changes archive title
+
+function inhabitent_archive_title( $title ) {
+    if ( is_post_type_archive('product') ) {
+        $title = 'Shop Stuff';
+    } elseif ( is_tax('product-type') ) {
+        $title = single_term_title( '', false );
+    }
+  
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );

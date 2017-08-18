@@ -114,3 +114,25 @@ body.archive {
 .journal-recent-block-item {
 	
 }
+
+.home-logo {
+	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+	background-size: contain;
+	width: 50%;
+	a {
+		width: 50px;
+		height: 33px;
+	}
+}
+
+.page-template-about .entry-header {
+	height: 100vh;
+	.entry-title {
+		position: absolute;
+		color: white;
+		font-size: 48px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

@@ -298,7 +298,11 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: Novecento,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 /* Copy */
 p {
@@ -402,20 +406,32 @@ table {
 .content-area {
   width: 100%; }
 
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .content-area {
+  width: 74%;
+  padding-right: 25px; }
+
 .site-content {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
+  margin: 0 auto; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
   width: 1120px;
   display: -ms-flexbox;
   display: flex;
   margin: auto; }
+
+.page-id-183 .site-content {
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+
+.page-id-183 #site-navigation a {
+  color: white; }
+
+.page-id-2 #site-navigation a {
+  color: white; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -499,14 +515,17 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-right: 21%;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -526,11 +545,12 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    position: relative;
+    padding-left: 25px; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #248a83; }
 
 /* Small menu. */
 .menu-toggle,
@@ -541,7 +561,8 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -ms-flexbox;
+    display: flex; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -560,6 +581,9 @@ a {
 .post-navigation .nav-next {
   float: right;
   text-align: right;
+  width: 50%; }
+
+.menu-main-menu-container {
   width: 50%; }
 
 /*--------------------------------------------------------------
@@ -720,6 +744,24 @@ body.archive .archive-product {
 .most-recent-journals {
   display: -ms-flexbox;
   display: flex; }
+
+.home-logo {
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: contain;
+  width: 50%; }
+  .home-logo a {
+    width: 50px;
+    height: 33px; }
+
+.page-template-about .entry-header {
+  height: 100vh; }
+  .page-template-about .entry-header .entry-title {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

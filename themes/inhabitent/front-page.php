@@ -41,3 +41,5 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
     <?php endforeach; wp_reset_postdata(); ?>
 </div>
 <?php get_footer(); ?>
+
+<!--<img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>-->
