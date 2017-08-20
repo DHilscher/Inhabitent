@@ -14,19 +14,20 @@
 <?php
 $terms = get_terms ('product-type');
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
+    <section class="front-page-shop-container">  
+        <h2>Shop Stuff</h2>      
+        <ul class="front-page-terms">
 
-    <ul class="front-page-terms">
+            <?php foreach ( $terms as $term ) : ?>
+                <li class="front-page-term">
+                    <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
+                    <p class="front-page-term-description"><?php echo $term->description; ?></p>
+                    <a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a>
+                </li>
+            <?php endforeach; ?>
 
-        <?php foreach ( $terms as $term ) : ?>
-            <li class="front-page-term">
-                <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
-                <p class="front-page-term-description"><?php echo $term->description; ?></p>
-                <a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a>
-            </li>
-        <?php endforeach; ?>
-
-    </ul>
-
+        </ul>
+    </section>    
 <?php endif; ?>
 
 <div class="most-recent-journals">

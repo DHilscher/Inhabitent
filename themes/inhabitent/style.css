@@ -568,6 +568,9 @@ a {
 .header-search {
   padding-right: 21%; }
 
+.search-field {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -716,13 +719,6 @@ body.archive .archive-product {
   height: 1px;
   overflow: hidden; }
 
-.front-page-terms {
-  display: -ms-flexbox;
-  display: flex; }
-  .front-page-terms .front-page-term {
-    width: 20%;
-    height: 20%; }
-
 .most-recent-journals {
   display: -ms-flexbox;
   display: flex;
@@ -781,15 +777,30 @@ body.archive .archive-product {
   background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: contain; }
 
-.front-page-terms {
-  text-align: center; }
-  .front-page-terms .front-page-term {
-    list-style: none;
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px; }
-    .front-page-terms .front-page-term img {
-      width: 70px;
-      height: 70px; }
+.front-page-shop-container {
+  text-align: center;
+  width: 1120px;
+  margin: 0 auto; }
+  .front-page-shop-container h2 {
+    font-size: 38.4px;
+    color: #2f1339;
+    margin-bottom: 60px;
+    line-height: 48px; }
+  .front-page-shop-container .front-page-terms {
+    text-align: center;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex; }
+    .front-page-shop-container .front-page-terms .front-page-term {
+      list-style: none;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      padding: .75rem;
+      margin: 0 auto;
+      width: 23%; }
+      .front-page-shop-container .front-page-terms .front-page-term img {
+        width: 70px;
+        height: 70px; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

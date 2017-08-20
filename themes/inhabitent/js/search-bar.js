@@ -1,12 +1,10 @@
-// $('a').on('click', function(event) {
-//    event.preventDefault();
-//    $('.search-field').toggle('slow');
-// });
-
-$('document').ready(function() {
-    $('a').on('click', function(event) {
+jQuery(document).ready(function($) {
+    $('.search-toggle').on('click', function(event) {
         event.preventDefault();  
        $('.search-field').toggle('slow');
           
     });
 });
+
+
+
