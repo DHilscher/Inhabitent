@@ -185,3 +185,15 @@ body.archive {
 	background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
 	background-size: contain;
 }
+.front-page-terms {
+	text-align: center;
+	.front-page-term {
+		list-style: none;
+		border: 1px solid #e1e1e1;
+    	border-top-width: 5px;
+		img {
+			width: 70px;
+			height: 70px;
+		}
+	}
+}

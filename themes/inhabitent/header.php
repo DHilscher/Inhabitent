@@ -34,7 +34,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 					<div class="header-search">
-						<form role="search" method="get" class="search-form" action="http://tent.academy.red/">
+						<form role="search" method="get" class="search-form" action="<?php echo get_home_url(); ?>">
 							<fieldset>
 								<a href="#" class="search-toggle" aria-hidden="true">
 									<i class="fa fa-search"></i>
