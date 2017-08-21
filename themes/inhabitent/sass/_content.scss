@@ -402,3 +402,24 @@ body.archive {
 		}
 	}
 }
+
+.page-template-default {
+	.content-area {
+		border-right: 1px solid #e1e1e1;
+	}
+	
+	b {
+		font-size: 33.6px;
+		line-height: 42px;
+		letter-spacing: 2px;
+		margin-bottom: 24px;
+		margin-top: 27.888px;
+		text-transform: uppercase;
+		font-family: Novecento,sans-serif;
+		
+	}
+	.widget-area {
+		padding-left: 5%;
+		padding-top: 48px;
+	}
+}

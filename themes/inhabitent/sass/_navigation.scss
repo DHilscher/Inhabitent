@@ -134,6 +134,11 @@ a {
 
 .menu-main-menu-container {
 	width: 50%;
+	.menu {
+		a {
+			text-transform: uppercase;
+		}
+	}
 }
 
 .header-search {

@@ -565,6 +565,8 @@ a {
 
 .menu-main-menu-container {
   width: 50%; }
+  .menu-main-menu-container .menu a {
+    text-transform: uppercase; }
 
 .header-search {
   padding-right: 10%; }
@@ -969,6 +971,22 @@ body.archive .archive-product {
       color: #2f1339; }
     .page-template-about .about-container .entry-container p {
       line-height: 28px; }
+
+.page-template-default .content-area {
+  border-right: 1px solid #e1e1e1; }
+
+.page-template-default b {
+  font-size: 33.6px;
+  line-height: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  margin-top: 27.888px;
+  text-transform: uppercase;
+  font-family: Novecento,sans-serif; }
+
+.page-template-default .widget-area {
+  padding-left: 5%;
+  padding-top: 48px; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
