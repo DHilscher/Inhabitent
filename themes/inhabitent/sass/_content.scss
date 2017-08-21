@@ -430,3 +430,12 @@ body.archive {
 		color: #248a83;
 	}
 }
+
+.single-product {
+	.site-main {
+		display: flex;
+		.entry-header {
+			display: flex;
+		}
+	}
+}
