@@ -30,25 +30,31 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
     </section>    
 <?php endif; ?>
 
-<div class="most-recent-journals">
-    <?php
-    $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
-    $journal_posts = get_posts( $args ); // returns an array of posts
-    ?>
-    <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-    <div class="journal-recent-block-item">
-        <div class="journal-thumbnail-wrapper">
-            <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail( 'medium' ); ?>
-            <?php endif; ?>
+<section class="journal-container">
+    <h3>Inhabitent Journal</h3>
+    <div class="most-recent-journals">
+        <?php
+        $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
+        $journal_posts = get_posts( $args ); // returns an array of posts
+        ?>
+        <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+        <div class="journal-recent-block-item">
+            <div class="journal-thumbnail-wrapper">
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail( 'medium' ); ?>
+                <?php endif; ?>
+            </div>
+            <div class="journal-info-wrapper">
+                <div class="entry-meta">
+                    <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+                </div>
+                <a class="post-permalink" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
+            </div>
+            <a class="journal-button" href="<? echo get_post_permalink() ?>">Read Entry</a>            
         </div>
-        <div class="entry-meta">
-            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-        </div>
-        <a href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
+        <?php endforeach; wp_reset_postdata(); ?>
     </div>
-    <?php endforeach; wp_reset_postdata(); ?>
-</div>
+</section>
 <?php get_footer(); ?>
 
 <img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>

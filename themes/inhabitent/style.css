@@ -699,7 +699,8 @@ body.archive .archive-product {
   background-size: cover,cover;
   width: 100vw;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  margin-bottom: 72px; }
   .home-hero img {
     position: absolute;
     top: 50%;
@@ -719,17 +720,59 @@ body.archive .archive-product {
   height: 1px;
   overflow: hidden; }
 
-.most-recent-journals {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto; }
-  .most-recent-journals div {
-    -ms-flex: 0 1 32%;
-        flex: 0 1 32%; }
-  .most-recent-journals :first-child img {
-    height: 247px; }
-  .most-recent-journals a {
-    color: #248a83; }
+.journal-container {
+  margin: 0 auto;
+  width: 1120px; }
+  .journal-container h3 {
+    text-align: center;
+    font-size: 38.4px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    color: #2f1339;
+    font-weight: normal;
+    line-height: 48px; }
+  .journal-container .most-recent-journals {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 72px; }
+    .journal-container .most-recent-journals .journal-recent-block-item {
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+      border: 1px solid #e1e1e1; }
+      .journal-container .most-recent-journals .journal-recent-block-item .journal-thumbnail-wrapper {
+        background-color: #e1e1e1; }
+      .journal-container .most-recent-journals .journal-recent-block-item .journal-info-wrapper {
+        padding: 12px;
+        margin-bottom: 60px; }
+      .journal-container .most-recent-journals .journal-recent-block-item .entry-meta {
+        font-size: 12px; }
+    .journal-container .most-recent-journals img {
+      height: 250px;
+      width: auto; }
+    .journal-container .most-recent-journals .post-permalink {
+      color: #248a83;
+      text-decoration: none;
+      font-size: 20.8px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-family: Novecento,sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .journal-container .most-recent-journals .journal-button {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Novecento,sans-serif;
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000;
+      font-size: 14.4px;
+      line-height: 14.4px;
+      padding: 12px 24px;
+      position: absolute;
+      transform: translate(9%, -130%); }
 
 .home-logo {
   width: 50%; }
@@ -781,12 +824,13 @@ body.archive .archive-product {
 .front-page-shop-container {
   text-align: center;
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto 72px; }
   .front-page-shop-container h2 {
     font-size: 38.4px;
     color: #2f1339;
     margin-bottom: 60px;
-    line-height: 48px; }
+    line-height: 48px;
+    margin-top: 0; }
   .front-page-shop-container .front-page-terms {
     text-align: center;
     margin: 0 auto;
@@ -813,6 +857,21 @@ body.archive .archive-product {
         padding: 12px 24px;
         text-decoration: none;
         font-size: 14.4px; }
+
+.post-type-archive-product .content-area {
+  margin: 0 auto; }
+  .post-type-archive-product .content-area h1 {
+    text-align: center; }
+  .post-type-archive-product .content-area ul {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+    text-transform: uppercase;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .post-type-archive-product .content-area ul a {
+      text-decoration: none; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
