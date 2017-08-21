@@ -955,6 +955,21 @@ body.archive .archive-product {
   padding-left: 5%;
   padding-top: 48px; }
 
+.page-template-about .about-container {
+  width: 1120px;
+  margin: 0 auto; }
+  .page-template-about .about-container .entry-container {
+    width: 800px;
+    margin: 0 auto; }
+    .page-template-about .about-container .entry-container h2 {
+      text-align: center;
+      font-size: 33.6px;
+      line-height: 42px;
+      margin-bottom: 24px;
+      color: #2f1339; }
+    .page-template-about .about-container .entry-container p {
+      line-height: 28px; }
+
 .site-footer {
   background: url(../../images/dark-wood.png);
   color: #fff; }

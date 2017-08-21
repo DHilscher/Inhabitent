@@ -381,3 +381,24 @@ body.archive {
 		padding-top: 48px;
 	}
 }
+
+.page-template-about {
+	.about-container {
+		width: 1120px;
+		margin: 0 auto;
+		.entry-container {
+			width: 800px;
+			margin: 0 auto;
+			h2 {
+				text-align: center;
+				font-size: 33.6px;
+				line-height: 42px;
+				margin-bottom: 24px;
+				color: #2f1339;
+			}
+			p {
+				line-height: 28px;
+			}
+		}
+	}
+}
