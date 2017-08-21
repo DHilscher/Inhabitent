@@ -4,13 +4,6 @@
 
 /* Posts and pages */
 
-body{
-	&:not(.page-template-about){
-		#primary {
-			width: 75%;
-		}
-	}
-}
 .sticky {
 	display: block;
 }
@@ -274,6 +267,7 @@ body.archive {
 .post-type-archive-product {
 	.content-area {
 		margin: 0 auto;
+		width: 75%;
 		h1 {
 			text-align: center;
 		}
@@ -304,6 +298,7 @@ body.archive {
 	flex-wrap: wrap;
 	width: 1120px;
 	justify-content: space-between;
+	margin: 0 auto;
 	.product-grid-item {
 		display: flex;
 		margin-bottom: 24px;
@@ -325,5 +320,17 @@ body.archive {
 				max-width: 100%;
 			}
 		}
+	}
+}
+
+.tax-product-type {
+	margin: 0 auto;
+	.content-area {
+		width: 100%;
+	}
+	.page-header {
+		text-align: center;
+	}
+	.site-footer {
 	}
 }

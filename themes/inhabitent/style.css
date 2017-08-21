@@ -411,6 +411,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   display: flex;
   margin: auto; }
 
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #primary {
+  width: 75%; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -643,9 +646,6 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-body:not(.page-template-about) #primary {
-  width: 75%; }
-
 .sticky {
   display: block; }
 
@@ -858,7 +858,8 @@ body.archive .archive-product {
         font-size: 14.4px; }
 
 .post-type-archive-product .content-area {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 75%; }
   .post-type-archive-product .content-area h1 {
     text-align: center; }
   .post-type-archive-product .content-area ul {
@@ -887,7 +888,8 @@ body.archive .archive-product {
       flex-wrap: wrap;
   width: 1120px;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin: 0 auto; }
   .product-grid .product-grid-item {
     display: -ms-flexbox;
     display: flex;
@@ -908,6 +910,13 @@ body.archive .archive-product {
       .product-grid .product-grid-item .thumbnail-wrapper img {
         height: 250px;
         max-width: 100%; }
+
+.tax-product-type {
+  margin: 0 auto; }
+  .tax-product-type .content-area {
+    width: 100%; }
+  .tax-product-type .page-header {
+    text-align: center; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
