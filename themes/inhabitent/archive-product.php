@@ -31,24 +31,30 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-            <?php echo CFS()->get( 'price' ); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+<section class="product-grid">
+<?php while ( have_posts() ) : the_post(); ?>
+		<div class="product-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="entry-header">
+				<div class="thumbnail-wrapper">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'medium' ); ?>
+				<?php endif; ?>
+				</div>
+				<div class="product-info">
+					<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '.....', CFS()->get( 'price' ), '</h2>' ); ?>
+					<?php echo CFS()->get( 'price' ); ?>
+				</div>
+			</header><!-- .entry-header -->
+		</div>
+<?php endwhile; ?>
+</section>
+	<?php else : ?>
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+	<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+
