@@ -120,12 +120,14 @@ body.archive {
 }
 
 .home-logo {
-	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-	background-size: contain;
+	
 	width: 50%;
 	a {
+		background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+		background-size: contain;
 		width: 50px;
 		height: 33px;
+		margin-left: 25.5%;
 	}
 }
 
@@ -169,13 +171,17 @@ body.archive {
 }
 
 .page-id-183 .home-logo {
+	a{
 	background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
 	background-size: contain;
+	}
 }
 
 .page-id-2 .home-logo {
+	a{
 	background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
 	background-size: contain;
+	}
 }
 
 .front-page-shop-container {
@@ -199,10 +205,23 @@ body.archive {
 			padding: .75rem;
 			margin: 0 auto;	
 			width: 23%;
-				
 			img {
 				width: 70px;
 				height: 70px;
+			}
+			.front-page-term-description {
+				min-height: 38.96%;
+			}
+			.shop-button {
+				margin-bottom: 12px;
+			}
+			a {
+				background: #248a83;
+				color: white;
+				text-transform: uppercase;
+				padding: 12px 24px;
+				text-decoration: none;
+				font-size: 14.4px;
 			}
 		}
 	}

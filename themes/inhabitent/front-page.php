@@ -22,7 +22,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
                 <li class="front-page-term">
                     <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
                     <p class="front-page-term-description"><?php echo $term->description; ?></p>
-                    <a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a>
+                    <p class="shop-button"><a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a></p>
                 </li>
             <?php endforeach; ?>
 

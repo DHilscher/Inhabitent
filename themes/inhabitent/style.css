@@ -732,12 +732,13 @@ body.archive .archive-product {
     color: #248a83; }
 
 .home-logo {
-  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-  background-size: contain;
   width: 50%; }
   .home-logo a {
+    background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+    background-size: contain;
     width: 50px;
-    height: 33px; }
+    height: 33px;
+    margin-left: 25.5%; }
 
 .page-template-about .entry-header {
   height: 100vh; }
@@ -769,11 +770,11 @@ body.archive .archive-product {
 .page-id-2 #site-navigation a {
   color: white; }
 
-.page-id-183 .home-logo {
+.page-id-183 .home-logo a {
   background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: contain; }
 
-.page-id-2 .home-logo {
+.page-id-2 .home-logo a {
   background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: contain; }
 
@@ -801,6 +802,17 @@ body.archive .archive-product {
       .front-page-shop-container .front-page-terms .front-page-term img {
         width: 70px;
         height: 70px; }
+      .front-page-shop-container .front-page-terms .front-page-term .front-page-term-description {
+        min-height: 38.96%; }
+      .front-page-shop-container .front-page-terms .front-page-term .shop-button {
+        margin-bottom: 12px; }
+      .front-page-shop-container .front-page-terms .front-page-term a {
+        background: #248a83;
+        color: white;
+        text-transform: uppercase;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 14.4px; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
