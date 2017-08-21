@@ -334,3 +334,50 @@ body.archive {
 	.site-footer {
 	}
 }
+
+.blog {
+	.entry-title {
+		a {
+			position: absolute;
+			transform: translate(0%, -487%);
+			background-color: #248a83;
+			max-width: 75%;
+			width: 41%;
+			color: #fff;
+			padding: 12px 24px;
+			text-decoration: none;
+			font-size: 33.6px;
+			line-height: 42px;
+		}
+
+	}
+	.entry-header {
+		img {
+			width: 96%;
+		}
+	}
+	.entry-content {
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: Novecento,sans-serif;
+			background-color: transparent;
+			border: 1px solid #000;
+			color: #000;
+			font-size: 14.4px;
+			line-height: 14.4px;
+			padding: 12px 24px;
+		}
+	}
+	.content-area {
+		border-right: 1px solid #e1e1e1;
+		width: 73%;
+		padding-right: 5%;
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+	.widget-area {
+		padding-left: 5%;
+		padding-top: 48px;
+	}
+}
