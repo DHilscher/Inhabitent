@@ -1,21 +1,9 @@
-# RED Starter
+I used javascript, blur and auto focus for the search bar. 
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+I learned PHP file structuring for php, js, css files.
 
-## Installation
+I also learned about file Hierarchy.
 
-### 1. Download me (don't clone me!)
+I also learned about the back-end UI for WordPress.
 
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+I also learned how important hooks and filters are for php.
