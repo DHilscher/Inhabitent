@@ -1,3 +1,1 @@
-# RED Functionality Plugin
-
-A template for a WordPress functionality plugin for RED Academy students.
+This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
