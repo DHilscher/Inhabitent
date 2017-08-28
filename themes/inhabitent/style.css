@@ -993,11 +993,43 @@ body.archive .archive-product {
   color: #248a83; }
 
 .single-product .site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
+.single-product .product {
   display: -ms-flexbox;
-  display: flex; }
-  .single-product .site-main .entry-header {
-    display: -ms-flexbox;
-    display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .single-product .product .thumbnail-container {
+    width: 48%; }
+    .single-product .product .thumbnail-container img {
+      max-width: 100%; }
+  .single-product .product .entry-content {
+    width: 48%; }
+    .single-product .product .entry-content .product-price {
+      margin-bottom: 21.44px;
+      font-size: 28.8px;
+      font-family: Novecento,sans-serif; }
+  .single-product .product button {
+    text-transform: uppercase;
+    font-family: Novecento,sans-serif;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14.4px;
+    line-height: 14.4px;
+    padding: 12px 24px;
+    border-radius: 0;
+    text-decoration: none; }
+    .single-product .product button:hover {
+      background: #248a83;
+      color: white;
+      box-shadow: none;
+      text-shadow: none; }
+  .single-product .product p {
+    padding: 0;
+    margin: 0; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

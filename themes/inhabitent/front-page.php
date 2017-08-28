@@ -50,7 +50,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
                 </div>
                 <a class="post-permalink" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
             </div>
-            <a class="journal-button" href="<? echo get_post_permalink() ?>">Read Entry</a>            
+            <a class="journal-button" href="<? echo get_post_permalink() ?>">Read Entry</a>          
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
