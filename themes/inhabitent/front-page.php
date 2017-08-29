@@ -22,7 +22,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
                 <li class="front-page-term">
                     <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
                     <p class="front-page-term-description"><?php echo $term->description; ?></p>
-                    <p class="shop-button"><a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a></p>
+                    <h3 class="shop-button"><a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a></h3>
                 </li>
             <?php endforeach; ?>
 
@@ -31,7 +31,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
 <?php endif; ?>
 
 <section class="journal-container">
-    <h3>Inhabitent Journal</h3>
+    <h2>Inhabitent Journal</h2>
     <div class="most-recent-journals">
         <?php
         $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
@@ -48,7 +48,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
                 <div class="entry-meta">
                     <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
                 </div>
-                <a class="post-permalink" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a>
+                <h3><a class="post-permalink" href="<? echo get_post_permalink() ?>"><?php the_title(); ?></a></h3>
             </div>
             <a class="journal-button" href="<? echo get_post_permalink() ?>">Read Entry</a>          
         </div>
@@ -57,24 +57,24 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
 </section>
 
 <section class="adventure-container">
-    <div class="adventure-one">
+    <h2>Latest Adventures</h2>
+    <div class="adventure-inner-container">
+        <div class="adventure-one">
+            <h3><a href="//localhost:3000/inhabitent/adventure/getting-back-to-nature-in-a-canoe">Getting Back To Nature in a Canoe</a></h3>
+        </div>
+        <div class="adventure-group">
+            <div class="adventure-two">
 
+            </div>
+
+            <div class="adventure-three">
+
+            </div>
+            <div class="adventure-four">
+
+            </div>
+        </div>
     </div>
-
-    <div class="adventure-group">
-        <div class="adventure-two">
-
-        </div>
-
-        <div class="adventure-three">
-
-        </div>
-        <div class="adventure-four">
-
-        </div>
-
-    </div>
-
 </section>
 <?php get_footer(); ?>
 

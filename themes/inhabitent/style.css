@@ -723,7 +723,7 @@ body.archive .archive-product {
 .journal-container {
   margin: 0 auto;
   width: 1120px; }
-  .journal-container h3 {
+  .journal-container h2 {
     text-align: center;
     font-size: 38.4px;
     margin-bottom: 60px;
@@ -738,6 +738,8 @@ body.archive .archive-product {
     -ms-flex-pack: justify;
         justify-content: space-between;
     margin-bottom: 72px; }
+    .journal-container .most-recent-journals h3 {
+      margin-top: 15px; }
     .journal-container .most-recent-journals .journal-recent-block-item {
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
@@ -774,6 +776,9 @@ body.archive .archive-product {
       padding: 12px 24px;
       position: absolute;
       transform: translate(9%, -130%); }
+      .journal-container .most-recent-journals .journal-button:hover {
+        background: #248a83;
+        color: white; }
 
 .home-logo {
   width: 50%; }
@@ -1031,19 +1036,27 @@ body.archive .archive-product {
     margin: 0;
     padding: 0; }
 
-.adventure-container {
+.adventure-container h2 {
+  font-size: 38.4px;
+  font-weight: normal;
+  text-align: center; }
+
+.adventure-container .adventure-inner-container {
   display: -ms-flexbox;
   display: flex;
   height: 540px;
   margin: 0 auto;
   width: 1120px; }
-  .adventure-container .adventure-one {
+  .adventure-container .adventure-inner-container h3 a {
+    color: white;
+    text-decoration: none; }
+  .adventure-container .adventure-inner-container .adventure-one {
     background: url(../../images/canoe-girl.jpg) no-repeat center;
     background-size: cover;
     border-right: 10px solid white;
     height: 540px;
     width: 50%; }
-  .adventure-container .adventure-group {
+  .adventure-container .adventure-inner-container .adventure-group {
     border-left: 10px solid white;
     display: -ms-flexbox;
     display: flex;
@@ -1051,26 +1064,49 @@ body.archive .archive-product {
         flex-wrap: wrap;
     height: 540px;
     width: 50%; }
-    .adventure-container .adventure-group .adventure-two {
+    .adventure-container .adventure-inner-container .adventure-group .adventure-two {
       background: url(../../images/beach-bonfire.jpg) no-repeat center;
       background-size: cover;
       border-bottom: 10px solid white;
       height: 270px;
       width: 100%; }
-    .adventure-container .adventure-group .adventure-three {
+    .adventure-container .adventure-inner-container .adventure-group .adventure-three {
       background: url(../../images/mountain-hikers.jpg) no-repeat center;
       background-size: cover;
       border-right: 10px solid white;
       border-top: 10px solid white;
       height: 270px;
       width: 50%; }
-    .adventure-container .adventure-group .adventure-four {
+    .adventure-container .adventure-inner-container .adventure-group .adventure-four {
       background: url(../../images/night-sky.jpg) no-repeat center;
       background-size: cover;
       border-left: 10px solid white;
       border-top: 10px solid white;
       height: 270px;
       width: 50%; }
+
+.single-adventure img {
+  width: 100%; }
+
+.single-adventure .entry-content {
+  width: 800px;
+  margin: 0 auto; }
+  .single-adventure .entry-content button {
+    text-transform: uppercase;
+    font-family: Novecento,sans-serif;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 14.4px;
+    line-height: 14.4px;
+    padding: 12px 24px;
+    border-radius: 0;
+    text-decoration: none; }
+    .single-adventure .entry-content button:hover {
+      background: #248a83;
+      color: white;
+      box-shadow: none;
+      text-shadow: none; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
