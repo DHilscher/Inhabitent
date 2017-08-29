@@ -55,6 +55,27 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
 </section>
+
+<section class="adventure-container">
+    <div class="adventure-one">
+
+    </div>
+
+    <div class="adventure-group">
+        <div class="adventure-two">
+
+        </div>
+
+        <div class="adventure-three">
+
+        </div>
+        <div class="adventure-four">
+
+        </div>
+
+    </div>
+
+</section>
 <?php get_footer(); ?>
 
 <img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>

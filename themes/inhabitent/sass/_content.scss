@@ -473,8 +473,52 @@ body.archive {
 			}
 		}
 		p {
-			padding: 0;
 			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.adventure-container {
+	display: flex;
+	height: 540px;
+	margin: 0 auto;
+    width: 1120px;
+	.adventure-one {
+		background: url(../../images/canoe-girl.jpg) no-repeat center;
+		background-size: cover;
+		border-right: 10px solid white;
+		height: 540px;	
+		width: 50%;
+	}
+	.adventure-group {
+		border-left: 10px solid white;
+		display: flex;
+		flex-wrap: wrap;
+		height: 540px;	
+		width: 50%;
+		.adventure-two {
+			background: url(../../images/beach-bonfire.jpg) no-repeat center;
+			background-size: cover;
+			border-bottom: 10px solid white;
+			height: 270px;			
+			width: 100%;
+		}
+		.adventure-three {
+			background: url(../../images/mountain-hikers.jpg) no-repeat center;
+			background-size: cover;
+			border-right: 10px solid white;
+			border-top: 10px solid white;
+			height: 270px;						
+			width: 50%;
+		}
+		.adventure-four {
+			background: url(../../images/night-sky.jpg) no-repeat center;
+			background-size: cover;
+			border-left: 10px solid white;
+			border-top: 10px solid white;
+			height: 270px;						
+			width: 50%;
 		}
 	}
 }
