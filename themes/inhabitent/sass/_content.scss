@@ -552,22 +552,35 @@ body.archive {
 	.entry-content {
 		width: 800px;
 		margin: 0 auto;
+		.buttons-container {
+			padding-bottom: 40px;			
+		}
 		button {
 			text-transform: uppercase;
 			font-family: Novecento,sans-serif;
 			background-color: transparent;
 			border: 1px solid #000;
 			color: #000;
-			font-size: 14.4px;
-			line-height: 14.4px;
 			padding: 12px 24px;
 			border-radius: 0;
 			text-decoration: none;
+			h2 {
+				font-size: 14.4px;
+				margin: 0;
+			}
+			.social-button {
+				color: black;
+				font-size: 14.4px;
+				line-height: 14.4px;
+			}
 			&:hover {
 				background: #248a83;
-				color: white;
 				box-shadow: none;
-				text-shadow: none;	
+				text-shadow: none;
+				border: none;
+				.social-button {
+					color: white;
+				}
 			}
 		}
 	}

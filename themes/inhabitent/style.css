@@ -1091,22 +1091,31 @@ body.archive .archive-product {
 .single-adventure .entry-content {
   width: 800px;
   margin: 0 auto; }
+  .single-adventure .entry-content .buttons-container {
+    padding-bottom: 40px; }
   .single-adventure .entry-content button {
     text-transform: uppercase;
     font-family: Novecento,sans-serif;
     background-color: transparent;
     border: 1px solid #000;
     color: #000;
-    font-size: 14.4px;
-    line-height: 14.4px;
     padding: 12px 24px;
     border-radius: 0;
     text-decoration: none; }
+    .single-adventure .entry-content button h2 {
+      font-size: 14.4px;
+      margin: 0; }
+    .single-adventure .entry-content button .social-button {
+      color: black;
+      font-size: 14.4px;
+      line-height: 14.4px; }
     .single-adventure .entry-content button:hover {
       background: #248a83;
-      color: white;
       box-shadow: none;
-      text-shadow: none; }
+      text-shadow: none;
+      border: none; }
+      .single-adventure .entry-content button:hover .social-button {
+        color: white; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);
