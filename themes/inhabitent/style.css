@@ -978,6 +978,10 @@ body.archive .archive-product {
   font-size: 14.4px;
   line-height: 14.4px;
   padding: 12px 24px; }
+  .blog .entry-content a:hover {
+    background: #248a83;
+    color: white;
+    border: none; }
 
 .blog .content-area {
   border-right: 1px solid #e1e1e1;
@@ -992,7 +996,8 @@ body.archive .archive-product {
 
 .page-template-about .about-container {
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 40px; }
   .page-template-about .about-container .entry-container {
     width: 800px;
     margin: 0 auto; }
@@ -1004,6 +1009,9 @@ body.archive .archive-product {
       color: #2f1339; }
     .page-template-about .about-container .entry-container p {
       line-height: 28px; }
+
+.page-template-default .entry-content {
+  margin: 0; }
 
 .page-template-default .content-area {
   border-right: 1px solid #e1e1e1; }
@@ -1021,13 +1029,35 @@ body.archive .archive-product {
   padding-left: 5%;
   padding-top: 48px; }
 
+.page-template-default input {
+  background: #248a83;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+  padding: 12px 24px; }
+  .page-template-default input:hover {
+    text-shadow: none;
+    box-shadow: none; }
+
+.page-template-default form {
+  padding-bottom: 60px; }
+
 #secondary a {
   text-decoration: none;
   color: #248a83; }
+  #secondary a:hover {
+    color: black; }
+
+#secondary .fa {
+  padding-right: .5rem;
+  cursor: auto; }
 
 .single-product .site-main {
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 40px; }
 
 .single-product .product {
   display: -ms-flexbox;
@@ -1224,6 +1254,37 @@ body.archive .archive-product {
       .post-type-archive-adventure .adventure-grid-item .adventure-info .adventure-button:hover {
         background: #248a83;
         border: none; }
+
+.search-results #secondary {
+  padding-left: 5%; }
+
+.search-results .site-main {
+  padding-right: 5%; }
+
+.search-results .content-area {
+  border-right: 1px solid #e1e1e1; }
+
+.search-results .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
+
+.search-results h2 a {
+  color: #248a83;
+  text-decoration: none;
+  font-size: 33.6px; }
+
+.search-results .entry-summary a {
+  color: black;
+  padding: 12px 24px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 14.4px;
+  line-height: 14.4px; }
+  .search-results .entry-summary a:hover {
+    background: #248a83;
+    border: none;
+    color: white; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

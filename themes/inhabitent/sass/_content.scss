@@ -383,6 +383,11 @@ body.archive {
 			font-size: 14.4px;
 			line-height: 14.4px;
 			padding: 12px 24px;
+			&:hover {
+				background: #248a83;
+				color: white;
+				border: none;
+			}
 		}
 	}
 	.content-area {
@@ -402,6 +407,7 @@ body.archive {
 	.about-container {
 		width: 1120px;
 		margin: 0 auto;
+		padding-bottom: 40px;
 		.entry-container {
 			width: 800px;
 			margin: 0 auto;
@@ -420,6 +426,9 @@ body.archive {
 }
 
 .page-template-default {
+	.entry-content {
+		margin: 0;
+	}
 	.content-area {
 		border-right: 1px solid #e1e1e1;
 	}
@@ -438,12 +447,35 @@ body.archive {
 		padding-left: 5%;
 		padding-top: 48px;
 	}
+	input {
+		background: #248a83;
+		border: none;
+		text-shadow: none;
+		box-shadow: none;
+		border-radius: 0;
+		color: white;
+		padding: 12px 24px;
+		&:hover {
+			text-shadow: none;
+			box-shadow: none;
+		}
+	}
+	form {
+		padding-bottom: 60px;
+	}
 }
 
 #secondary {
 	a {
 		text-decoration: none;
 		color: #248a83;
+		&:hover {
+			color: black;
+		}
+	}
+	.fa {
+		padding-right: .5rem;
+		cursor: auto;
 	}
 }
 
@@ -451,6 +483,7 @@ body.archive {
 	.site-main {
 		width: 1120px;
 		margin: 0 auto;
+		padding-top: 40px;
 	}
 	.product {
 		display: flex;
@@ -685,6 +718,45 @@ body.archive {
 				background: #248a83;
 				border: none;
 				}
+			}
+		}
+	}
+}
+
+.search-results {
+	#secondary {
+		padding-left: 5%;
+	}
+	.site-main {
+		padding-right: 5%;		
+	}
+	.content-area {
+		border-right: 1px solid #e1e1e1;
+	}
+	.page-header {
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 3rem;
+		padding-bottom: 1rem;
+	}
+	h2 {
+		a {
+			color: #248a83;;
+			text-decoration: none;
+			font-size: 33.6px;
+		}
+	}
+	.entry-summary {
+		a {
+			color: black;
+			padding: 12px 24px;
+			border: 1px solid black;
+			text-decoration: none;
+			font-size: 14.4px;
+			line-height: 14.4px;
+			&:hover {
+				background: #248a83;
+				border: none;
+				color: white;
 			}
 		}
 	}
