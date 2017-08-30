@@ -83,4 +83,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     width: 75%;
 }
 
+body:not(.home):not(.page-template-about) #primary {
+	padding-top: 50px;
+}
 

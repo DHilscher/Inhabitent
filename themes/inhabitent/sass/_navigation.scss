@@ -30,6 +30,8 @@ a {
 	clear: both;
 	display: flex;
 	width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 1px;
 
 	ul {
 		display: flex;
@@ -78,7 +80,7 @@ a {
 	li {
 		position: relative;
 		padding-left: 25px;
-
+		transform: translateY(19%);
 		&:hover > a,
 		&.focus > a {
 		}
@@ -143,8 +145,24 @@ a {
 
 .header-search {
 	padding-right: 10%;
+	margin-left: 1%;
+	transform: translateY(19%);	
+	form {
+		display: flex;
+		flex-flow: row nowrap;
+		a {
+			margin-right: 8%;
+		}
+	}
 }
 
 .search-field {
 	display: none;
+	transform: translateY(-14%);
+}
+input[type=search] {
+	&:focus {
+		outline: none;
+		border: none;
+	}
 }

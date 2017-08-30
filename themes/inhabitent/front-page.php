@@ -60,22 +60,37 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
     <h2>Latest Adventures</h2>
     <div class="adventure-inner-container">
         <div class="adventure-one">
-            <h3><a href="//localhost:3000/inhabitent/adventure/getting-back-to-nature-in-a-canoe">Getting Back To Nature in a Canoe</a></h3>
+            <h3 class="large-text"><a href="adventure/getting-back-to-nature-in-a-canoe">Getting Back To Nature in a Canoe</a></h3>
+            <div class="read-more">
+                <a class="adventure-button-hover" href="adventure/getting-back-to-nature-in-a-canoe">Read More</a>
+            </div>
         </div>
         <div class="adventure-group">
             <div class="adventure-two">
-
+                <h3 class="large-text"><a href="adventure/a-night-with-friends-at-the-beach">A Night with Friends at the Beach</a></h3>
+                <div class="read-more">
+                    <a class="adventure-button-hover" href="adventure/a-night-with-friends-at-the-beach">Read More</a>
+                </div>
             </div>
 
             <div class="adventure-three">
-
+                <h3 class="small-text"><a href="adventure/taking-in-the-view-at-big-mountain">Taking in the View at Big Mountain</a></h3>
+                <div class="read-more read-more-square">
+                    <a class="adventure-button-hover" href="adventure/taking-in-the-view-at-big-mountain">Read More</a>
+                </div>
             </div>
             <div class="adventure-four">
-
+                <h3 class="small-text"><a href="adventure/star-gazing-at-the-night-sky">Star-Gazing at the Night Sky</a></h3>
+                <div class="read-more read-more-square">
+                    <a class="adventure-button-hover" href="adventure/star-gazing-at-the-night-sky">Read More</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <p><a class="adventure-button-solid" href="adventures">More Adventures</a></p>
 </section>
+
 <?php get_footer(); ?>
 
 <img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>

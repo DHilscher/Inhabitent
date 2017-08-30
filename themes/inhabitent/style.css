@@ -414,6 +414,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #primary {
   width: 75%; }
 
+body:not(.home):not(.page-template-about) #primary {
+  padding-top: 50px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -498,7 +501,9 @@ a {
   clear: both;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1px; }
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
@@ -526,7 +531,8 @@ a {
       left: auto; }
   .main-navigation li {
     position: relative;
-    padding-left: 25px; }
+    padding-left: 25px;
+    transform: translateY(19%); }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -569,10 +575,24 @@ a {
     text-transform: uppercase; }
 
 .header-search {
-  padding-right: 10%; }
+  padding-right: 10%;
+  margin-left: 1%;
+  transform: translateY(19%); }
+  .header-search form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap; }
+    .header-search form a {
+      margin-right: 8%; }
 
 .search-field {
-  display: none; }
+  display: none;
+  transform: translateY(-14%); }
+
+input[type=search]:focus {
+  outline: none;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -683,7 +703,12 @@ a {
   display: block; }
 
 #secondary {
+  padding-top: 72px;
   width: 25%; }
+  #secondary ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
 
 body.archive .archive-product {
   -ms-flex-flow: column nowrap;
@@ -925,6 +950,9 @@ body.archive .archive-product {
   .tax-product-type .page-header {
     text-align: center; }
 
+.blog .site-content {
+  padding-top: 40px; }
+
 .blog .entry-title a {
   position: absolute;
   transform: translate(0%, -487%);
@@ -955,7 +983,7 @@ body.archive .archive-product {
   border-right: 1px solid #e1e1e1;
   width: 73%;
   padding-right: 5%;
-  padding-top: 48px;
+  padding-top: 80px;
   padding-bottom: 48px; }
 
 .blog .widget-area {
@@ -1049,7 +1077,14 @@ body.archive .archive-product {
   width: 1120px; }
   .adventure-container .adventure-inner-container h3 a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: none; }
+  .adventure-container .adventure-inner-container .large-text {
+    font-size: 39px;
+    transform: translate(3%, 0%); }
+  .adventure-container .adventure-inner-container .small-text {
+    font-size: 27px;
+    transform: translate(8%, 0%); }
   .adventure-container .adventure-inner-container .adventure-one {
     background: url(../../images/canoe-girl.jpg) no-repeat center;
     background-size: cover;
@@ -1085,6 +1120,36 @@ body.archive .archive-product {
       height: 270px;
       width: 50%; }
 
+.adventure-container p {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 35px 0px 70px; }
+
+.adventure-container .adventure-button-solid {
+  text-decoration: none;
+  color: white;
+  background: #248a83;
+  font-size: 19.2px;
+  padding: 12px 24px;
+  text-transform: uppercase; }
+
+.adventure-container .adventure-button-hover {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 14.4px;
+  padding: 12px 24px;
+  text-transform: uppercase; }
+  .adventure-container .adventure-button-hover:hover {
+    background: #248a83;
+    border: none; }
+
+.adventure-container .read-more {
+  transform: translateX(4%); }
+
+.adventure-container .read-more-square {
+  transform: translateX(8%); }
+
 .single-adventure img {
   width: 100%; }
 
@@ -1116,6 +1181,49 @@ body.archive .archive-product {
       border: none; }
       .single-adventure .entry-content button:hover .social-button {
         color: white; }
+
+.post-type-archive-adventure .site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-adventure h2 {
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 32px;
+  margin: 50px 0; }
+
+.post-type-archive-adventure .adventure-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 100px; }
+
+.post-type-archive-adventure .adventure-grid-item {
+  position: relative;
+  width: 49%;
+  overflow: hidden;
+  padding-bottom: 16px; }
+  .post-type-archive-adventure .adventure-grid-item .adventure-info {
+    position: absolute;
+    top: 7%;
+    left: 4%; }
+    .post-type-archive-adventure .adventure-grid-item .adventure-info h3 {
+      font-size: 45px; }
+      .post-type-archive-adventure .adventure-grid-item .adventure-info h3 a:hover {
+        color: #f0e4d1; }
+    .post-type-archive-adventure .adventure-grid-item .adventure-info a {
+      color: white;
+      text-decoration: none; }
+    .post-type-archive-adventure .adventure-grid-item .adventure-info .adventure-button {
+      padding: 12px 24px;
+      border: 1px solid white; }
+      .post-type-archive-adventure .adventure-grid-item .adventure-info .adventure-button:hover {
+        background: #248a83;
+        border: none; }
 
 .site-footer {
   background: url(../../images/dark-wood.png);

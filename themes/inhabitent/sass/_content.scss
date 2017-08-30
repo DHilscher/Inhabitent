@@ -49,7 +49,13 @@
 }
 
 #secondary {
+	padding-top: 72px;
 	width: 25%;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 }
 
 body.archive {
@@ -343,6 +349,9 @@ body.archive {
 }
 
 .blog {
+	.site-content {
+	padding-top: 40px;		
+	}
 	.entry-title {
 		a {
 			position: absolute;
@@ -380,7 +389,7 @@ body.archive {
 		border-right: 1px solid #e1e1e1;
 		width: 73%;
 		padding-right: 5%;
-		padding-top: 48px;
+		padding-top: 80px;
 		padding-bottom: 48px;
 	}
 	.widget-area {
@@ -500,9 +509,18 @@ body.archive {
 		h3 {
 			a {
 				color: white;
-				text-decoration: none;	
+				text-decoration: none;
+				text-transform: none;				
 			}
+		}
+		.large-text {
+			font-size: 39px;
+			transform: translate(3%, 0%);
+		}
 
+		.small-text {
+			font-size: 27px;
+			transform: translate(8%, 0%);						
 		}
 		.adventure-one {
 			background: url(../../images/canoe-girl.jpg) no-repeat center;
@@ -510,7 +528,8 @@ body.archive {
 			border-right: 10px solid white;
 			height: 540px;	
 			width: 50%;
-			
+			a {
+			}
 		}
 		.adventure-group {
 			border-left: 10px solid white;
@@ -518,6 +537,8 @@ body.archive {
 			flex-wrap: wrap;
 			height: 540px;	
 			width: 50%;
+			a {
+			}
 			.adventure-two {
 				background: url(../../images/beach-bonfire.jpg) no-repeat center;
 				background-size: cover;
@@ -543,6 +564,38 @@ body.archive {
 			}
 		}
 	}
+	p {
+		width: 1120px;
+		margin: 0 auto;
+		padding: 35px 0px 70px;
+	}
+	.adventure-button-solid {
+		text-decoration: none;
+		color: white;
+		background: #248a83;
+		font-size: 19.2px;
+		padding: 12px 24px;
+		text-transform: uppercase;		
+	}
+	.adventure-button-hover {
+		text-decoration: none;
+		border: 1px solid white;
+		color: white;
+		font-size: 14.4px;
+		padding: 12px 24px;
+		text-transform: uppercase;
+		&:hover {
+			background: #248a83;
+			border: none;
+
+		}		
+	}
+	.read-more {
+		transform: translateX(4%);
+	}
+	.read-more-square {
+		transform: translateX(8%);		
+	}
 }
 
 .single-adventure {
@@ -566,7 +619,7 @@ body.archive {
 			text-decoration: none;
 			h2 {
 				font-size: 14.4px;
-				margin: 0;
+				margin: 0; 
 			}
 			.social-button {
 				color: black;
@@ -580,6 +633,57 @@ body.archive {
 				border: none;
 				.social-button {
 					color: white;
+				}
+			}
+		}
+	}
+}
+
+.post-type-archive-adventure {
+	.site-main {
+		width: 1120px;
+		margin: 0 auto;
+	}
+	h2 {
+		font-size: 32px;
+		text-align: center;
+		border-bottom: 1px dashed #c8c8c8;
+		padding-bottom: 32px;
+		margin: 50px 0;
+	}
+	.adventure-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+	.adventure-grid-item {
+		position: relative;
+		width: 49%;
+		overflow: hidden;
+		padding-bottom: 16px;
+		.adventure-info {
+			position: absolute;
+			top: 7%;
+		    left: 4%;
+			h3 {
+				font-size: 45px;
+				a {
+					&:hover {
+					color: #f0e4d1;
+					}	
+				}
+			}
+			a {
+				color: white;
+				text-decoration: none;
+			}
+			.adventure-button {
+				padding: 12px 24px;
+				border: 1px solid white;
+				&:hover {
+				background: #248a83;
+				border: none;
 				}
 			}
 		}

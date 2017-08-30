@@ -16,25 +16,24 @@
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-<section class="adventure-grid">
-    <?php while ( have_posts() ) : the_post(); ?>
-        <div class="adventure-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <div class="thumbnail-wrapper">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail( 'medium' ); ?>
-                        </a>
-                    <?php endif; ?>
-                    <div class="adventure-info">
-                        <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+            <h2>Latest Adventures</h2>
+            <section class="adventure-grid">
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <div class="adventure-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <header class="entry-header">
+                            <div class="thumbnail-wrapper">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php the_post_thumbnail( 'large' ); ?>
+                                <?php endif; ?>
+                                <div class="adventure-info">
+                                    <?php the_title( sprintf( '<h3 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                                    <a class="adventure-button" href="<?php echo get_the_permalink(); ?>">Read More</a>
+                                </div>
+                            </div>
+                        </header><!-- .entry-header -->
                     </div>
-                </div>
-            </header><!-- .entry-header -->
-        </div>
-    <?php endwhile; ?>
-</section>
-
+                <?php endwhile; ?>
+            </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
