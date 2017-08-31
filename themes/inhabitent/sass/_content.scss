@@ -447,7 +447,7 @@ body.archive {
 		padding-left: 5%;
 		padding-top: 48px;
 	}
-	input {
+	.wpcf7-submit {
 		background: #248a83;
 		border: none;
 		text-shadow: none;
@@ -459,9 +459,6 @@ body.archive {
 			text-shadow: none;
 			box-shadow: none;
 		}
-	}
-	form {
-		padding-bottom: 60px;
 	}
 }
 
@@ -759,5 +756,36 @@ body.archive {
 				color: white;
 			}
 		}
+	}
+}
+
+.error404 {
+	.content-area {
+		border-right: 1px solid #e1e1e1;
+		padding-right: 5%;
+	}
+	#secondary {
+		padding-left: 5%;
+	}
+	a {
+		color: #248a83;		
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.search-form {
+		button{
+			visibility: hidden;
+		}
+	}
+	.search-field {
+		display: block;
+		background-color: #f4f4f4;
+		padding: .3rem;
+	}
+	fieldset {
+		border: none;
 	}
 }

@@ -32,6 +32,9 @@ a {
 	width: 100%;
     border-bottom: 1px solid #e1e1e1;
 	padding-bottom: 1px;
+	.search-field {
+		text-transform: uppercase;
+	}
 
 	ul {
 		display: flex;
