@@ -20,7 +20,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
 
             <?php foreach ( $terms as $term ) : ?>
                 <li class="front-page-term">
-                    <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>">
+                    <img src="<?php echo get_template_directory_uri( ) . '/images/' . $term->slug . '.svg'; ?>" alt="<?php echo $term->slug ?>">
                     <p class="front-page-term-description"><?php echo $term->description; ?></p>
                     <h3 class="shop-button"><a class="front-page-term-link" href="<?php echo get_term_link( $term );?>"><?= $term->name; ?>  Stuff</a></h3>
                 </li>
@@ -92,5 +92,3 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ): ?>
 </section>
 
 <?php get_footer(); ?>
-
-<img src="<?php stylesheet_directory_uri() . '/images' . $product_type->slug . '.svg'?>
