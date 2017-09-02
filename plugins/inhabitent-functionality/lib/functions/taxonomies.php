@@ -10,7 +10,6 @@
 // Register Custom Taxonomy
 
 function inhabitent_tax_product_type() {
-
 	$labels = array(
 		'name'                       => 'Product Types',
 		'singular_name'              => 'Product Type',
@@ -44,6 +43,5 @@ function inhabitent_tax_product_type() {
 		'show_in_rest'               => true,
 	);
 	register_taxonomy( 'product-type', array( 'product' ), $args );
-
 }
 add_action( 'init', 'inhabitent_tax_product_type', 0 );

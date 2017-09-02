@@ -24,9 +24,7 @@
  	$posted_on = sprintf( esc_html( '%s' ), $time_string );
 
  	echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
-
  }
-
  /**
   * Prints HTML with meta information for the post author.
   */
@@ -37,9 +35,7 @@
  	);
 
  	echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
-
  }
-
  /**
   * Prints HTML with meta information for the comments with pop-up link.
   */
@@ -49,9 +45,7 @@
  		comments_popup_link( esc_html( '0 Comments' ), esc_html( '1 Comment' ), esc_html( '% Comments' ) );
  		echo '</span>';
  	}
-
  }
-
  /**
   * Prints HTML with meta information for the categories and tags.
   */
@@ -63,7 +57,6 @@
  		if ( $categories_list && red_starter_categorized_blog() ) {
  			printf( '<span class="cat-links">' . esc_html( 'Posted in &rarr; %1$s' ) . '</span>', $categories_list ); // WPCS: XSS OK.
  		}
-
  		/* translators: used between list items, there is a space after the comma */
  		$tags_list = get_the_tag_list( '', esc_html( ', ' ) );
  		if ( $tags_list ) {
@@ -71,7 +64,6 @@
  		}
  	}
  }
-
  /**
   * Returns true if a blog has more than 1 category.
   *
@@ -83,7 +75,6 @@
  		$all_the_cool_cats = get_categories( array(
  			'fields'     => 'ids',
  			'hide_empty' => 1,
-
  			// We only need to know if there is more than one category.
  			'number'     => 2,
  		) );
@@ -115,7 +106,6 @@
  }
  add_action( 'edit_category', 'red_starter_category_transient_flusher' );
  add_action( 'save_post',     'red_starter_category_transient_flusher' );
-
  /**
   * Template for comments. We have opted out of displaying pingbacks and trackbacks.
   *
@@ -124,20 +114,16 @@
  function red_starter_comment_list( $comment, $args, $depth ) {
  	$GLOBALS['comment'] = $comment;
  	?>
-
  	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
  		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
-
  			<div class="comment-author-avatar">
  				<?php echo get_avatar( $comment, 64 ); ?>
  			</div>
-
  			<div class="comment-content">
  				<div class="comment-meta">
  					<div class="comment-author vcard">
  						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
  					</div><!-- .comment-author -->
-
  					<div class="comment-metadata">
  						<time datetime="<?php comment_time( 'c' ); ?>">
  								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
@@ -161,13 +147,9 @@
  					) ) ); ?>
  				</div><!-- .reply -->
  			</div><!-- .comment-content -->
-
  		</article><!-- .comment-body -->
-
  	<?php
-
  }
-
  /**
   * Display numbered post pagination instead of "Older Posts" and "Next Posts".
   */

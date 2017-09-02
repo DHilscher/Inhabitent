@@ -16,7 +16,6 @@ function inhabitent_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
@@ -51,7 +50,6 @@ function inhabitent_dynamic_css() {
     if ( ! is_page_template( 'page-templates/about.php' ) ) {
         return;
     }
-    
     $image = CFS()->get( 'about_header_image' );
     if ( ! $image ) {
         return;
@@ -74,7 +72,6 @@ function inhabitent_archive_title( $title ) {
     } elseif ( is_tax('product-type') ) {
         $title = single_term_title( '', false );
     }
-  
     return $title;
 }
  

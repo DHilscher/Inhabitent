@@ -63,7 +63,6 @@ function inhabitent_cpt_product() {
 
     //Clear Permalinks
     flush_rewrite_rules();
-
 }
 add_action( 'init', 'inhabitent_cpt_product', 0 );
 
@@ -122,6 +121,5 @@ function inhabitent_cpt_adventure() {
 
     //Clear Permalinks
     flush_rewrite_rules();
-
 }
 add_action( 'init', 'inhabitent_cpt_adventure', 0 );
